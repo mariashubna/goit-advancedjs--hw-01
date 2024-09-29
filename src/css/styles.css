@@ -1,18 +1,47 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(215, 240, 247);
+}
+.gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+list-style: none;
+margin: 0;
+margin-bottom: 20px;
+padding: 0;
+}
+.gallery-item {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-basis: calc((100% - 20px * 2) / 3);
+}
+.gallery-image {
+width: 100%;
+max-height: 100%;
+border-radius: 10px;
+border: 3px solid greenyellow;
+}
+.feedback-form {
+  display: flex;
+ flex-direction: column;
+ width: 500px;
+ margin: 0 auto;
+ gap: 20px;
+ border: 2px black solid;
+ padding: 20px;
+ border-radius: 10px;
+ background-color: #fff;
+}
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form button {
+  padding: 10px 0;
+  background-color: rgb(52, 50, 50);
+  color: #fff;
+  cursor: pointer;
+}
