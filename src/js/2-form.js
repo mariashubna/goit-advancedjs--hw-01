@@ -23,6 +23,5 @@ function handleSubmit(evt) {
     console.log(formData);
     localStorage.removeItem(localStorageKey);
     form.reset();
-  }
-}
-
+  };
+};
